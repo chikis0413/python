@@ -27,16 +27,19 @@ def weather_dashboard():
 def render_resultados 
 
 #para poder mostrar los resultados antes debo saber cual es la ciudad que digito en el formulario
-    cityname= request.form['cityName']
+cityname= request.form['cityName']
 
     #es pasarle el valor de la ciudad que el usuario digito al api
 
-    api= get_api_key();
+api= get_api_key();
 
+data = get_weather_results)cityname, api)
 
-
-
-#esta condicion siempre va en los proyectos de python
-#e indica que por defecto el metodo principal 
-if __name__ =="__main__":
-app.run(debug=True)
+def
+get_api_key():
+# esta funcion obtiene el valor del api key que
+# se va a utilizar para consumir el servicio web
+# se lee el archivo que guarda la api key del servicio web
+config = configparser.ConfigParser()
+config. read('config.ini')
+return config ['openweathermap'] ['api']
