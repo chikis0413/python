@@ -35,6 +35,13 @@ api= get_api_key();
 
 data = get_weather_results)cityname, api)
 
+
+
+
+
+
+
+
 def
 get_api_key():
 # esta funcion obtiene el valor del api key que
